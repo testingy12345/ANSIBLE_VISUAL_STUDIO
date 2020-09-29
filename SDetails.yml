@@ -1,0 +1,24 @@
+---
+- SDetails:
+    - name: Vipin
+      phno: 8208627925
+      Course: DEVOPS
+      address: NAGPUR
+
+    - name: Amit
+      phno: 8652348464
+      Course: JAVA
+      address: SEOINI
+
+    - name: Vijay
+      phno: 4589632148
+      Course: JAVA DEVELOPMENT
+      address: DAVANGERE
+      
+    - name: Dinesh
+      phno: 4578961236
+      Course: AWS
+      address: Chennai
+      
+
+

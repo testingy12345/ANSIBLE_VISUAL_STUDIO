@@ -1,0 +1,11 @@
+---
+- hosts: all
+  tasks:
+  - name: I want to take all my hosts
+    ping:
+
+  - name: I want to install apache2  webserver on my ubuntu machine 
+    apt:
+      name:  apache2
+      state: present
+      
