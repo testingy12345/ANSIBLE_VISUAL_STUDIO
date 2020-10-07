@@ -1,16 +1,25 @@
 ---
 - hosts: all
+  become: yes
   tasks:
-  - name: I want to take all my hosts
-    ping:
+  
 
-  - name: I want to install apache2  webserver on my ubuntu machine 
+  - name: I want to install apache2  webserver on  ubuntu  
     apt:
       name:  apache2
       state: present
 
+<<<<<<< HEAD
   
   - name: I want to install tree
     apt:
       name: tree
       state: present  
+=======
+  - name: I want to start my apache2 server
+    service:
+       name: apache2
+       state: started
+
+  
+>>>>>>> 7a7154f704dcb542f4c658906c0239ea8a4cc259
