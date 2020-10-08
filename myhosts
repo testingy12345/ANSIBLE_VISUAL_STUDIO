@@ -1,2 +1,22 @@
+[webservers]
+172.31.22.254
+172.31.4.247
+
+[appserver]
+172.31.4.247
+172.31.4.248
+
+[dbserver]
+172.31.4.249
+172.31.4.250
+
+[ubuntuservers]
 172.31.22.254
 
+[redhatserver]
+172.31.4.247
+
+[webservers:vars]
+key=value
+mywebonubuntu=apache2
+mywebonredhat=httpd
