@@ -10,18 +10,18 @@
 
   - name: I want to install webserver on Redhat
     service:
-      name:  "{{mywebonubuntu}}"
+      name:  -"{{mywebonubuntu}}"
       state: started
     when: ansible os_family =="Debian"
 
   - name: i want to install webserver on redhat 
     yum:
-      name:  "{{mywebonredhat}}"
+      name:  -"{{mywebonredhat}}"
     state: present
     when: ansible os_family =="RedHat"
  
   - name: i want to install webserver on redhat 
     yum:
-      name:  "{{mywebonredhat}}"
+      name:  -"{{mywebonredhat}}"
     state: started
     when: ansible os_family =="RedHat"
