@@ -4,18 +4,16 @@
   tasks:
   - include: myfile.yml
 
-  - name : install apache2 webserver
-    apt  : 
-       name: apache2
-       state: present
+  - name: install apache2 webserver
+    apt:
+      name: apache2
+      state: present
+    notify: restartwebserver
 
+ 
 
-  - name : Restart apache2 webservers
-    service:
-        name: apache2
-        state : restarted
-
-  - name : copy index.j2 file into ansible node
-    template: 
+  - name: copy index.j2 file into ansible node side
+    template:
       src: index.j2
-      dest: var/www/html/index.html
+      dest: /var/www/html/index.html
+    notify: restartwebserver
