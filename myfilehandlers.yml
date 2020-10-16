@@ -22,3 +22,9 @@
     service:
       name: apache2
       state: Restart
+
+  handlers:
+    - name: restartwebserver
+      service:
+        name: apache2
+        state: restarted
