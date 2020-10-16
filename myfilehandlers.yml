@@ -7,8 +7,8 @@
   - name: install apache2 webserver
     apt:
       name: apache2
-      state: present
-    notify: restartwebserver
+      state: restarted
+    
 
  
 
@@ -16,12 +16,12 @@
     template:
       src: index.j2
       dest: /var/www/html/index.html
-    notify: restartwebserver
+  
 
   - name: Restart apache2 webserver
     service:
       name: apache2
-      state: Restart
+      state: restarted
 
   handlers:
     - name: restartwebserver
