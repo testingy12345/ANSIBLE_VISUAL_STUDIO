@@ -1,5 +1,0 @@
----
-- host: 172.31.22.254
-  become: yes
-  tasks:
-  - include_tasks: myfile.yml
