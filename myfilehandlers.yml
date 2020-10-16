@@ -18,10 +18,7 @@
       dest: /var/www/html/index.html
   
 
-  - name: Restart apache2 webserver
-    service:
-      name: apache2
-      state: restarted
+  
 
   handlers:
     - name: restartwebserver
