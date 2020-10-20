@@ -1,2 +1,12 @@
 ---
 # tasks file for mytom8onUbuntu16
+ - include_tasks: myjava.yml
+ - include_tasks: TomcatUserGroup.yml
+ - include_tasks: download.yml
+ - include_tasks: extract.yml
+ - include_tasks: Permission.yml
+ - include_tasks: tomcatconfig.yml
+ - include_tasks: tomcatstart.yml
+ - include_tasks: tomuser.yml
+ - include_tasks: tomcatRestart.yml
+ 
